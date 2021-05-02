@@ -1,12 +1,26 @@
+﻿/**
+* for any given set of points P there is a function F, where F ∩ P exists for degree of size |P| - 1.
+* meaning that for any parametric linear equation there is 2 points that satisfy the line and thus meaning that for any parametic function
+* there is a set of points that satisfy the degree as the amount of points - 1.
+*/
 #include <iostream>
 #include "bezier.hpp"
+#include <algorithm>
+#include <memory>
+#include <ostream>
 
-void operator "" _print(const char* str)
+std::vector<Point> 
+    bezier_detail::f_bezier_points_create(std::vector<Point>* const& start_points_list)
 {
-    std::cout << str << '\n';
+	std::shared_ptr<std::vector<Point>> bezier_curve_vec {new std::vector<Point>()};
+	//for (size_t i = 0; i < start_points_list->size(); i++)
+	//{
+
+	//}
+	return *bezier_curve_vec;
 }
 
-std::vector<Point> bezier_detail::f_bezier_create(std::vector<Point> const& points_list, u32 const stride)
-{
-    return std::vector<Point>();
+std::ostream& operator<<(std::ostream out, Point const& _rhs) {
+	out << "Point(" << _rhs.x << ',' << _rhs.y << ")";
+	return out;
 }

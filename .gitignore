@@ -32,6 +32,9 @@ bld/
 [Oo]ut/
 [Ll]og/
 [Ll]ogs/
+x64/**
+x86/**
+boost_1_76_0/**
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -361,3 +364,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+boost_1_76_0/bin.v2/libs/atomic/build/stage/boost_atomic-config-version.cmake
+*.cmake
+*.cmake
+*.exe

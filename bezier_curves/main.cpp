@@ -4,7 +4,7 @@ Date: / /
 Desc:
 */
 #include <iostream>
-using namespace std;
+#include "bezier.hpp"
 
 //==================== DEBUG ADAPTER MODE ===================//
 #if _DEBUG
@@ -15,11 +15,14 @@ using namespace std;
 #pragma warning(disable : 26495)
 BOOST_AUTO_TEST_CASE(CASE1)
 {
-    cout << __TIMESTAMP__ << " <==> D.HERRERA.V 0881570\n" << endl;
+    std::cout << __TIMESTAMP__ << " <==> D.HERRERA.V 0881570\n" << std::endl;
 }//end case1
 
-BOOST_AUTO_TEST_CASE(CASE2)
+BOOST_AUTO_TEST_CASE(testing_point_operators)
 {
+    const Point x{ 3,4 };
+    const Point y{ 3,4 };
+    operator<<(std::cout, x + y);
 }
 #endif // DEBUG
 
