@@ -9,10 +9,10 @@
 #include <memory>
 #include <ostream>
 
-std::vector<Point> 
-    bezier_detail::f_bezier_points_create(std::vector<Point>* const& start_points_list)
+std::vector<Point_2D> 
+    bezier_detail::f_bezier_points_create(std::vector<Point_2D>* const &start_points_list)
 {
-	std::shared_ptr<std::vector<Point>> bezier_curve_vec {new std::vector<Point>()};
+	std::shared_ptr<std::vector<Point_2D>> bezier_curve_vec {new std::vector<Point_2D>()};
 	//for (size_t i = 0; i < start_points_list->size(); i++)
 	//{
 
@@ -20,7 +20,7 @@ std::vector<Point>
 	return *bezier_curve_vec;
 }
 
-std::ostream& operator<<(std::ostream out, Point const& _rhs) {
+std::ostream& operator<<(std::ostream out, Point_2D const& _rhs) {
 	out << "Point(" << _rhs.x << ',' << _rhs.y << ")";
 	return out;
 }

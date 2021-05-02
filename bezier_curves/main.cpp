@@ -20,8 +20,8 @@ BOOST_AUTO_TEST_CASE(CASE1)
 
 BOOST_AUTO_TEST_CASE(testing_point_operators)
 {
-    const Point x{ 3,4 };
-    const Point y{ 3,4 };
+    const Point_2D x{ 3,4 };
+    const Point_2D y{ 3,4 };
     operator<<(std::cout, x + y);
 }
 #endif // DEBUG
