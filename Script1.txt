@@ -1,0 +1,148 @@
+// JavaScript source code
+
+/**
+ * regex = anything in `...`
+ *
+json
+    element
+
+value
+    object
+    array
+    string
+    number
+    "true"
+    "false"
+    "null"
+
+object
+    '{' ws '}'
+    '{' members '}'
+
+members
+    member
+    member ',' members
+
+member
+    ws string ws ':' element
+
+array
+    '[' ws ']'
+    '[' elements ']'
+
+elements
+    element
+    element ',' elements
+
+element
+    ws value ws
+
+string
+    '"' characters '"'
+
+characters
+    ""
+    character characters
+
+character
+    '0020' . '10FFFF' - '"' - '\'
+    '\' escape
+
+escape
+    '"'
+    '\'
+    '/'
+    'b'
+    'f'
+    'n'
+    'r'
+    't'
+    'u' hex hex hex hex
+
+hex
+    digit
+    'A' . 'F'
+    'a' . 'f'
+
+number
+    integer fraction exponent
+
+integer
+    digit
+    onenine digits
+    '-' digit
+    '-' onenine digits
+
+digits
+    digit
+    digit digits
+
+digit
+    '0'
+    onenine
+
+onenine
+    '1' . '9'
+
+fraction
+    ""
+    '.' digits
+
+exponent
+    ""
+    'E' sign digits
+    'e' sign digits
+
+sign
+    ""
+    '+'
+    '-'
+
+ws
+    ""
+    '0020' ws
+    '000A' ws
+    '000D' ws
+    '0009' ws
+ */
+{
+    {
+	    "FederationOfStudents" : {
+		    "Name" : ["Stella", "Aaron", "Rachel"],
+		    "Student_num" : [121917,789095,481283]
+	    }
+    },
+
+["butter","apples","lemons","bread","milk","cereal"]
+
+// #3 serialized complex even structured complex object
+{
+	"Course" : ["INFO-3118","INFO-5061","INFO-3162","INFO-6003"],
+	"Section" : [03,01,04,01],
+	"Date" : ["2019-04-23","2019-04-25","2019-04-25","2019-04-26"],
+	"Start_time" : ["12:00","11:00","16:00","8:00"],
+	"Duration" : [180,120,90,120],
+	"Room_num" : ["M3039","R1071","B1071","R1020"]
+},
+
+// #4 cottage rental posting data set
+{
+	"Location" : ["Clareville", "Quebec"],
+	"Bedrooms" : 4,
+	"Bathrooms" : 2,
+	"petsAllowed" : "No",
+	"Sleeps" : 10,
+	"Rates" : {
+		"Daily" : "$150",
+		"Weekly" : "$1500",
+		"Weekend" : "$800"
+	},
+	"Features" : ["Hot Tub", "Internet", "Private Beach"],
+	"Contact" : {
+		"Name" : "Jerry",
+		"Phone" : "506-789-1234",
+		"E-Mail" : "jlafave@nwc.org"
+	}
+},
+{}
+}
